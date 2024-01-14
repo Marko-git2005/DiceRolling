@@ -11,7 +11,7 @@
         const value = Math.floor(Math.random()*6) +1; 
         console.log(value); 
         values.push(value);
-        images.push(`<img src="images/${value}.png">`); 
+        images.push(`<img src="${value}.png">`); 
     }
     diceResult.textContent = `dice: ${values.join(', ')}`;
     diceimages.innerHTML = images.join('');  
